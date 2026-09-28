@@ -1,51 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Pet Shop Website</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Pet Shop — Home</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Welcome to The Pet Shop</h1>
-        <p>Your friendly place for pets, supplies, and care.</p>
-    </header>
 
-    <nav>
-        <a href="#home">Home</a> |
-        <a href="#about">About</a> |
-        <a href="#services">Services</a> |
-        <a href="#contact">Contact</a>
-    </nav>
+  <header>
+    <div class="wrap">
+      <a class="brand" href="index.html">The Pet <span>Shop</span></a>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="pets.html">Our Pets</a></li>
+          <li><a href="about.html">About &amp; Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-    <main>
-        <section id="home">
-            <h2>Home</h2>
-            <p>We provide quality pet products and helpful information for pet owners.</p>
-        </section>
+  <section class="hero">
+    <div class="wrap">
+      <h1>A neighborhood pet shop for every kind of animal lover.</h1>
+      <p>We help you find a healthy, well-cared-for companion — and give you everything you need to take good care of them once they're home. We've been doing this in Springfield since 2004, working with local rescues and small breeders instead of large-scale suppliers.</p>
+      <a class="button" href="pets.html">See our pets</a>
+    </div>
+  </section>
 
-        <section id="about">
-            <h2>About Us</h2>
-            <p>The Pet Shop is dedicated to helping families care for their pets with love and responsibility.</p>
-        </section>
+  <section class="section" style="padding-bottom: 0;">
+    <div class="wrap">
+      <p class="section-label">Why people choose us</p>
+      <h2>What you get when you adopt here</h2>
+      <div class="grid">
+        <div class="card">
+          <div class="card-body">
+            <h3>Vet-checked animals</h3>
+            <p>Every pet is examined and vaccinated by our partner vet before they're ever listed.</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <h3>Honest guidance</h3>
+            <p>Our staff will tell you if a pet isn't a good fit for your home — no pressure, no upselling.</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <h3>Support after adoption</h3>
+            <p>Questions about food, training, or behavior? Call or stop by any time after you bring your pet home.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-        <section id="services">
-            <h2>Our Services</h2>
-            <ul>
-                <li>Pet food and supplies</li>
-                <li>Pet grooming products</li>
-                <li>Pet care advice</li>
-            </ul>
-        </section>
+  <section class="section">
+    <div class="wrap">
+      <p class="section-label">Featured this week</p>
+      <h2>Meet a few of our residents</h2>
 
-        <section id="contact">
-            <h2>Contact</h2>
-            <p>Email us at: info@thepetshop.com</p>
-        </section>
-    </main>
+      <div class="grid">
+        <div class="card">
+          <img src="https://placedog.net/500/350?id=10" alt="A golden retriever puppy sitting on grass, looking toward the camera">
+          <div class="card-body">
+            <span class="tag">Dog</span>
+            <h3>Biscuit</h3>
+            <p>A playful golden retriever puppy, 10 weeks old, already good on a leash.</p>
+          </div>
+        </div>
 
-    <footer>
-        <p>&copy; 2026 The Pet Shop Website</p>
-    </footer>
+        <div class="card">
+          <img src="https://placedog.net/500/350?id=25" alt="A black and white border collie lying down with its ears perked up">
+          <div class="card-body">
+            <span class="tag">Dog</span>
+            <h3>Pepper</h3>
+            <p>A sharp, energetic border collie who loves puzzle toys and long walks.</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="https://placedog.net/500/350?id=33" alt="A small terrier mix standing alert in a grassy yard">
+          <div class="card-body">
+            <span class="tag">Dog</span>
+            <h3>Nugget</h3>
+            <p>A small, curious terrier mix who gets along well with kids and other pets.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="wrap">
+      <p>&copy; 2026 The Pet Shop. All rights reserved. &middot; (555) 271-4893 &middot; hello@thepetshop.example</p>
+    </div>
+  </footer>
+
 </body>
 </html>
