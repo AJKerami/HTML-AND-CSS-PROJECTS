@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Pet Shop | One-Page Website</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <a class="brand" href="#home">The Pet <span>Shop</span></a>
+      <!-- Each navigation link points to an id on this page. -->
+      <nav aria-label="Page sections">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#pictures">Pictures</a></li>
+          <li><a href="#video">Video</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero" aria-labelledby="home-heading">
+      <div class="wrap">
+        <h1 id="home-heading">Welcome to The Pet Shop</h1>
+        <p>Meet friendly animals and learn how to prepare for a new companion. Our team helps families find a pet that fits their home and daily routine.</p>
+        <a class="button" href="#pictures">Meet the pets</a>
+      </div>
+    </section>
+
+    <section id="pictures" class="section" aria-labelledby="pictures-heading">
+      <div class="wrap">
+        <h2 id="pictures-heading">Pictures of our pets</h2>
+        <p>Here are a few examples of the pets you might meet at our shop.</p>
+        <div class="grid">
+          <figure class="card">
+            <img src="https://placedog.net/500/350?id=10" alt="A dog photographed outdoors" width="500" height="350">
+            <figcaption class="card-body"><strong>Biscuit</strong> — a playful young dog.</figcaption>
+          </figure>
+          <figure class="card">
+            <img src="https://placedog.net/500/350?id=25" alt="A second dog photographed outdoors" width="500" height="350">
+            <figcaption class="card-body"><strong>Pepper</strong> — an energetic companion.</figcaption>
+          </figure>
+          <figure class="card">
+            <img src="https://placedog.net/500/350?id=33" alt="A third dog photographed outdoors" width="500" height="350">
+            <figcaption class="card-body"><strong>Nugget</strong> — a curious little dog.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section id="video" class="section" aria-labelledby="video-heading">
+      <div class="wrap">
+        <h2 id="video-heading">Watch an adoption video</h2>
+        <p>Learn why giving an animal a home can make a difference.</p>
+        <iframe
+          src="https://www.youtube-nocookie.com/embed/gQfUFxnf764"
+          title="The Rescue Effect, an animal adoption video by the ASPCA"
+          width="640"
+          height="360"
+          loading="lazy"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen></iframe>
+        <p><a href="https://www.youtube.com/watch?v=gQfUFxnf764">Watch the adoption video on YouTube</a> if the embedded player does not load.</p>
+      </div>
+    </section>
+
+    <section id="contact" class="section" aria-labelledby="contact-heading">
+      <div class="wrap">
+        <h2 id="contact-heading">Contact us</h2>
+        <p>Use this practice form to tell us which kind of pet interests you.</p>
+        <!-- This is an HTML class exercise: no message is sent until a form service is added. -->
+        <form action="#contact" method="get">
+          <p>
+            <label for="visitor-name">Your name</label><br>
+            <input id="visitor-name" name="name" type="text" autocomplete="name" required>
+          </p>
+          <p>
+            <label for="visitor-email">Email address</label><br>
+            <input id="visitor-email" name="email" type="email" autocomplete="email" required>
+          </p>
+          <p>
+            <label for="pet-interest">Pet interest</label><br>
+            <select id="pet-interest" name="pet" required>
+              <option value="">Choose one</option>
+              <option value="dog">Dog</option>
+              <option value="cat">Cat</option>
+              <option value="other">Other</option>
+            </select>
+          </p>
+          <p>
+            <label for="visitor-message">Message</label><br>
+            <textarea id="visitor-message" name="message" rows="5" cols="45" required></textarea>
+          </p>
+          <button type="submit">Submit practice form</button>
+        </form>
+        <p><small>This is a sample website for an HTML assignment. The form does not send a message.</small></p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <p>&copy; 2026 The Pet Shop. HTML class project. <a href="#home">Back to top</a></p>
+    </div>
+  </footer>
+</body>
+</html>
