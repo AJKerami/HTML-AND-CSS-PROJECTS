@@ -31,7 +31,9 @@ h4 { margin-bottom: .4rem; }
 .button:hover { background: #23402c; }
 .recipe-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.4rem; }
 .recipe-card { padding: 1.5rem; border: 1px solid var(--border); border-radius: 10px; background: white; }
-.recipe-icon { font-size: 3rem; margin: 0 0 .7rem; padding: 1rem; text-align: center; background: #f3f0e5; border-radius: 6px; }
+.recipe-photo { margin: 0 0 .7rem; }
+.recipe-photo img { display: block; width: 100%; height: auto; aspect-ratio: 4 / 3; object-fit: cover; border-radius: 6px; }
+.recipe-photo figcaption { margin-top: .4rem; font-size: .7rem; line-height: 1.5; color: var(--muted); }
 .recipe-time { font-size: .8rem; color: var(--muted); }
 .recipe-card ul, .recipe-card ol { padding-left: 1.3rem; font-size: .95rem; }
 .recipe-card li { margin-bottom: .5rem; }

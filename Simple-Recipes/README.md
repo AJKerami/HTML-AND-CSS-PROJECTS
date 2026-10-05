@@ -4,7 +4,7 @@ A beginner HTML and CSS project for the About Page Challenge.
 
 ## Open the website
 
-Download this folder and open `index.html` in a web browser. Keep `style.css` in the same folder. No installation is required.
+Download this folder and open `index.html` in a web browser. Keep `style.css` and the `images` folder alongside it. No installation is required.
 
 ## Challenge requirements
 
@@ -16,6 +16,8 @@ Download this folder and open `index.html` in a web browser. Keep `style.css` in
 - Scroll margins keep section headings visible below the sticky navigation.
 
 The contact form is a browser-only practice form. It validates required fields but does not send or store messages. The About copy is the sample text supplied by the assignment.
+
+The three recipe cards use local photographs of pasta, garden salad, and pancakes. Each photo has descriptive alternative text and a credit below it. Full sources and licenses are in [images/README.md](images/README.md).
 
 ## Check it yourself
 
