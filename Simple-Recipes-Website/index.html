@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Simple recipes, everyday ingredients, and a little inspiration for your next meal.">
+  <title>Simple Recipes | Home Cooking Made Easy</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav class="container" aria-label="Main navigation">
+      <a class="brand" href="#home">Simple Recipes<span>Everyday ingredients. Delicious meals.</span></a>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#recipes">Recipes</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section id="home" class="hero">
+      <div class="container">
+        <p class="eyebrow">A little inspiration for your kitchen</p>
+        <h1>Good food.<br>Simple steps.</h1>
+        <p>Make something delicious with everyday ingredients and easy-to-follow recipes.</p>
+        <a class="button" href="#recipes">Explore recipes</a>
+      </div>
+    </section>
+    <section id="recipes" class="container section" aria-labelledby="recipes-heading">
+      <p class="eyebrow">Cook something you love</p>
+      <h2 id="recipes-heading">Easy recipes to get you started</h2>
+      <div class="recipe-grid">
+        <article class="recipe-card">
+          <p class="recipe-icon" aria-hidden="true">🍝</p>
+          <p class="recipe-time">20 minutes · Serves 2</p>
+          <h3>Tomato &amp; Basil Pasta</h3>
+          <p>A comforting classic for an easy weeknight dinner.</p>
+          <h4>Ingredients</h4>
+          <ul><li>200 g pasta</li><li>1 tablespoon olive oil</li><li>2 minced garlic cloves</li><li>400 g canned chopped tomatoes</li><li>A handful of fresh basil, salt, and pepper</li></ul>
+          <h4>Steps</h4>
+          <ol><li>Cook pasta according to the package directions.</li><li>Heat oil in a pan and gently cook garlic for 1 minute. Add tomatoes and simmer for 10 minutes.</li><li>Toss with drained pasta and basil. Season to taste.</li></ol>
+        </article>
+        <article class="recipe-card">
+          <p class="recipe-icon" aria-hidden="true">🥗</p>
+          <p class="recipe-time">10 minutes · Serves 2</p>
+          <h3>Fresh Garden Salad</h3>
+          <p>A crisp, colorful side with a simple lemon dressing.</p>
+          <h4>Ingredients</h4>
+          <ul><li>4 cups washed mixed greens</li><li>1 diced cucumber</li><li>1 cup halved cherry tomatoes</li><li>2 tablespoons olive oil</li><li>1 tablespoon lemon juice, salt, and pepper</li></ul>
+          <h4>Steps</h4>
+          <ol><li>Place greens, cucumber, and tomatoes in a bowl.</li><li>Whisk olive oil, lemon juice, salt, and pepper together.</li><li>Toss with the dressing just before serving.</li></ol>
+        </article>
+        <article class="recipe-card">
+          <p class="recipe-icon" aria-hidden="true">🥞</p>
+          <p class="recipe-time">20 minutes · Serves 2</p>
+          <h3>Fluffy Breakfast Pancakes</h3>
+          <p>A warm and cheerful start to your morning.</p>
+          <h4>Ingredients</h4>
+          <ul><li>1 cup all-purpose flour</li><li>2 teaspoons baking powder</li><li>1 tablespoon sugar</li><li>¾ cup milk and 1 egg</li><li>2 tablespoons melted butter, plus extra for the pan</li></ul>
+          <h4>Steps</h4>
+          <ol><li>Mix flour, baking powder, and sugar. Whisk milk, egg, and melted butter separately.</li><li>Combine wet and dry ingredients until just mixed.</li><li>Pour small portions onto a buttered pan over medium heat. Flip when bubbles appear; cook until golden and the centers are cooked through.</li></ol>
+        </article>
+      </div>
+    </section>
+    <!-- About Page Challenge: this section appears above the contact form. -->
+    <section id="about" class="section about" aria-labelledby="about-heading">
+      <div class="container about-content">
+        <p class="eyebrow">From our kitchen to yours</p>
+        <h2 id="about-heading">About</h2>
+        <div>
+          <p>Simple Recipes is your ultimate destination for easy-to-follow recipes that make cooking enjoyable for everyone, whether you're a seasoned chef or a beginner. Founded in the United States out of a passion for home cooking, our mission is to inspire and empower you to create delicious meals with everyday ingredients and simple techniques.</p>
+          <p>We offer a wide range of diverse cuisines, from classic comfort foods to international dishes, all accompanied by step-by-step instructions and helpful tips to ensure your cooking experience is smooth and successful. Our dedicated team of home cooks and food enthusiasts meticulously test each recipe, so you can cook with confidence.</p>
+          <p>At Simple Recipes, we believe that good food brings people together, and we're excited to have you join our community. Let’s cook up something amazing together!</p>
+        </div>
+      </div>
+    </section>
+    <section id="contact" class="container section" aria-labelledby="contact-heading">
+      <p class="eyebrow">Let's talk food</p>
+      <h2 id="contact-heading">Contact us</h2>
+      <p>Have a recipe idea or a cooking question? Write it below.</p>
+      <p class="form-note" id="form-note">This is a practice form. Messages are not sent or stored.</p>
+      <form aria-describedby="form-note">
+        <label for="name">Your name</label>
+        <input id="name" name="name" type="text" autocomplete="name" required>
+        <label for="email">Email address</label>
+        <input id="email" name="email" type="email" autocomplete="email" required>
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+        <button class="button" type="submit">Try the form</button>
+        <p id="form-status" role="status"></p>
+      </form>
+    </section>
+  </main>
+  <footer><div class="container"><p>Simple Recipes · Home cooking made easy.</p><a href="#home">Back to top ↑</a></div></footer>
+  <script>
+    // Demonstrate form validation without sending personal information.
+    document.querySelector('form').addEventListener('submit', function (event) {
+      event.preventDefault();
+      document.getElementById('form-status').textContent = 'Practice form complete! Your message has not been sent or stored.';
+    });
+  </script>
+</body>
+</html>
