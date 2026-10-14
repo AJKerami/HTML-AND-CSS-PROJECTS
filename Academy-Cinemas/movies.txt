@@ -1,0 +1,17 @@
+Academy Cinemas — draft movie content
+
+The three film titles are visible in the supplied tutorial's starter-file list.
+The following short descriptions and showtimes are draft demonstration content;
+they are not a transcription of the academy's original movies.txt file.
+
+Ben-Hur
+A sweeping story of rivalry, courage, and redemption.
+Example showtimes: 1:00 PM, 4:00 PM, 7:00 PM
+
+The Day the Earth Stood Still
+A visitor from space brings a message for the people of Earth.
+Example showtimes: 1:00 PM, 4:00 PM, 7:00 PM
+
+Vertigo
+A mystery shaped by obsession, memory, and appearances.
+Example showtimes: 1:00 PM, 4:00 PM, 7:00 PM

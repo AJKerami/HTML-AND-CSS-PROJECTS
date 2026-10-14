@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Academy Cinemas: a student website with classic movie listings, a ticket selection demo, and a contact form.">
+  <title>Academy Cinemas</title>
+  <!-- A small SVG embedded in a data URL needs no separate favicon file. -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2064%2064'%3E%3Crect%20width='64'%20height='64'%20rx='12'%20fill='%237a1022'/%3E%3Ctext%20x='32'%20y='45'%20text-anchor='middle'%20font-size='44'%20fill='%23ffe066'%3EA%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header">
+    <nav class="navigation page-width" aria-label="Main navigation">
+      <a class="brand" href="#home" aria-label="Academy Cinemas home">Academy Cinemas<span class="brand-caption">THE CLASSICS, ON THE BIG SCREEN</span></a>
+      <ul class="nav-links">
+        <li><a href="#now-playing">Now Playing</a></li>
+        <li><a href="#tickets">Tickets</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <div class="hero-content page-width">
+        <p class="eyebrow">LIGHTS DOWN. STORIES UP.</p>
+        <h1 id="hero-title">An evening<br>with the classics.</h1>
+        <p class="hero-copy">Discover three unforgettable films at Academy Cinemas.</p>
+        <a class="button" href="#now-playing">Explore the movies <span aria-hidden="true">&rarr;</span></a>
+      </div>
+      <div class="hero-decoration" aria-hidden="true"><span>Academy</span><span>Cinemas</span></div>
+    </section>
+
+    <section class="section page-width" id="now-playing" aria-labelledby="movies-title">
+      <div class="section-heading"><div><p class="eyebrow">A CLASSIC LINEUP</p><h2 id="movies-title">Now Playing</h2></div><p>Choose your next movie night.</p></div>
+      <div class="movie-grid">
+        <article class="movie-card" id="ben-hur">
+          <img src="images/ben-hur.svg" alt="Original gold and burgundy title artwork for Ben-Hur" width="420" height="540">
+          <div class="movie-content"><p class="movie-number">01 / CLASSIC CINEMA</p><h3>Ben-Hur</h3><p>A sweeping story of rivalry, courage, and redemption.</p><button class="text-button" type="button" data-movie="Ben-Hur">Choose Ben-Hur <span aria-hidden="true">&rarr;</span></button></div>
+        </article>
+        <article class="movie-card" id="earth-stood-still">
+          <img src="images/earth-stood-still.svg" alt="Original blue title artwork for The Day the Earth Stood Still" width="420" height="540">
+          <div class="movie-content"><p class="movie-number">02 / CLASSIC CINEMA</p><h3>The Day the Earth Stood Still</h3><p>A visitor from space brings a message for the people of Earth.</p><button class="text-button" type="button" data-movie="The Day the Earth Stood Still">Choose The Day the Earth Stood Still <span aria-hidden="true">&rarr;</span></button></div>
+        </article>
+        <article class="movie-card" id="vertigo">
+          <img src="images/vertigo.svg" alt="Original red spiral title artwork for Vertigo" width="420" height="540">
+          <div class="movie-content"><p class="movie-number">03 / CLASSIC CINEMA</p><h3>Vertigo</h3><p>A mystery shaped by obsession, memory, and appearances.</p><button class="text-button" type="button" data-movie="Vertigo">Choose Vertigo <span aria-hidden="true">&rarr;</span></button></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="ticket-section" id="tickets" aria-labelledby="tickets-title">
+      <div class="page-width">
+        <div class="section-heading"><div><p class="eyebrow">YOUR NEXT MOVIE NIGHT</p><h2 id="tickets-title">Tickets</h2></div></div>
+        <p class="section-intro" id="ticket-note">Practice booking form. Showtimes are examples; no tickets are purchased and no payment is collected.</p>
+        <form id="ticket-form" aria-describedby="ticket-note">
+          <div class="ticket-grid">
+            <div class="field"><label for="movie">Select a movie</label><select id="movie" name="movie" required><option value="">Choose a movie</option><option>Ben-Hur</option><option>The Day the Earth Stood Still</option><option>Vertigo</option></select></div>
+            <div class="field"><label for="showtime">Select a showtime</label><select id="showtime" name="showtime" required><option value="">Choose a time</option><option>1:00 PM</option><option>4:00 PM</option><option>7:00 PM</option></select></div>
+            <div class="field"><label for="quantity">Number of tickets</label><input id="quantity" name="quantity" type="number" min="1" max="10" step="1" value="1" required><span class="field-help">Between 1 and 10 tickets</span></div>
+          </div>
+          <button class="button" type="submit">Preview tickets <span aria-hidden="true">&rarr;</span></button>
+        </form>
+        <noscript><p class="noscript-note">Enable JavaScript to preview your ticket selection.</p></noscript>
+      </div>
+    </section>
+
+    <section class="section page-width contact-section" id="contact" aria-labelledby="contact-title">
+      <div class="contact-copy"><p class="eyebrow">LET'S TALK CINEMA</p><h2 id="contact-title">Contact</h2><p>Have a question about the movies? Try our practice contact form.</p><p class="small-copy" id="contact-note">This student demo validates your entries locally. It does not send or store your message.</p></div>
+      <form id="contact-form" aria-describedby="contact-note">
+        <div class="field"><label for="full-name">Full name</label><input id="full-name" name="fullName" type="text" autocomplete="name" maxlength="100" required></div>
+        <div class="field"><label for="email">Email address</label><input id="email" name="email" type="email" autocomplete="email" maxlength="254" required></div>
+        <div class="field"><label for="message">Message</label><textarea id="message" name="message" rows="4" maxlength="2000" required></textarea></div>
+        <button class="button button-dark" type="submit">Check message <span aria-hidden="true">&rarr;</span></button>
+        <p id="contact-status" class="form-status" role="status"></p>
+        <noscript><p>Enable JavaScript to check this practice message.</p></noscript>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer"><div class="page-width footer-content"><p class="footer-brand">Academy Cinemas</p><p>Student project &middot; Ahmad Jawed Kerami</p><a href="#home">Back to top <span aria-hidden="true">&uarr;</span></a></div></footer>
+
+  <dialog id="ticket-dialog" aria-labelledby="dialog-title" aria-describedby="ticket-summary">
+    <p class="eyebrow">YOUR SELECTION</p><h2 id="dialog-title">Ticket preview</h2><p id="ticket-summary"></p><p class="small-copy">This is a demonstration. No reservation or purchase has been made.</p><form method="dialog"><button class="button button-dark" type="submit" autofocus>Close preview</button></form>
+  </dialog>
+</body>
+</html>

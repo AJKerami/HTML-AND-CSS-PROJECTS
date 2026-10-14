@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="420" height="540" viewBox="0 0 420 540">
+  <rect width="420" height="540" fill="#142e3f"/>
+  <rect x="20" y="20" width="380" height="500" fill="none" stroke="#9ecac4" stroke-width="2"/>
+  <circle cx="210" cy="242" r="120" fill="#38666a"/>
+  <circle cx="210" cy="242" r="82" fill="#9ecac4"/>
+  <path d="M70 265Q210 180 350 265Q210 317 70 265Z" fill="#ffe066"/>
+  <path d="M95 271Q210 320 325 271" fill="none" stroke="#142e3f" stroke-width="7"/>
+  <g fill="#fffaf1"><circle cx="85" cy="144" r="3"/><circle cx="307" cy="108" r="3"/><circle cx="347" cy="192" r="3"/><circle cx="118" cy="328" r="3"/></g>
+  <text x="210" y="70" text-anchor="middle" fill="#fffaf1" font-family="Arial,sans-serif" font-size="12" letter-spacing="4">ACADEMY CINEMAS</text>
+  <g text-anchor="middle" fill="#fffaf1" font-family="Georgia,serif" font-weight="bold"><text x="210" y="400" font-size="31">THE DAY THE EARTH</text><text x="210" y="441" font-size="39">STOOD STILL</text></g>
+  <text x="210" y="480" text-anchor="middle" fill="#9ecac4" font-family="Arial,sans-serif" font-size="12" letter-spacing="3">CLASSIC CINEMA</text>
+</svg>
