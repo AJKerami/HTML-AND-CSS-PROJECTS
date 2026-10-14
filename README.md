@@ -2,6 +2,9 @@
 
 ## Assignments
 
+### Bootstrap Albums Challenge
+Open [the renovation album](Bootstrap-Albums-Challenge/index.html). It customizes the official Bootstrap 5.3.3 Album template with nine original illustrations and descriptions. Opening it in a browser remains to be verified on the student's computer.
+
 ### Academy Cinemas
 Open [Academy Cinemas](Academy-Cinemas/index.html). It includes movie listings, ticket and contact demos, and a Bootstrap grid footer. The footer requirement is implemented; matching all 12 tutorial parts remains to be checked against the complete course materials.
 
@@ -26,4 +29,5 @@ The page includes a home section, pictures, a practice contact form, an embedded
 - [Our Pets](The-Pet-Shop-Website/pets.html)
 - [About and Contact](The-Pet-Shop-Website/about.html)
 - [Shared stylesheet](The-Pet-Shop-Website/style.css)
+
 
