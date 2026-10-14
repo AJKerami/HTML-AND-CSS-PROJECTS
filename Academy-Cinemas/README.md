@@ -1,42 +1,57 @@
 # Academy Cinemas — working draft
 
-This student project follows the features visible in the supplied Academy Cinemas tutorial recording. It is a working draft, not a claim that every academy grading requirement is complete.
+This project includes the features visible in the supplied short tutorial recording and the Bootstrap footer required by the GitHub Submission Assignment. Matching every part of the full 12-part Bootstrap series remains to be verified.
+
+## Assignment checklist
+
+| Requirement | Status |
+| --- | --- |
+| Push Academy-Cinemas to HTML-AND-CSS-PROJECTS | Folder uploaded. |
+| Add a footer using Bootstrap | Implemented directly in index.html. |
+| Include all code from the 12-part Bootstrap series | Pending comparison with the complete series. |
+| Submit the repository URL at the academy | Pending; the submission-page URL and an accessible session are needed. |
 
 ## Open the website
 
-Download the repository and open `Academy-Cinemas/index.html` in a current browser, or open this folder in Visual Studio Code and use Live Server. The HTML, CSS, JavaScript, and SVG images are local, so the page has no external font, framework, or image dependency.
+Download the repository and open `Academy-Cinemas/index.html` in a browser, or use Visual Studio Code and Live Server. All artwork, scripts, and stylesheets are local, including Bootstrap's grid, so the page can render offline. External social links require internet access.
 
 ## Included features
 
-- A burgundy-and-gold cinema theme, navigation, and responsive layout.
-- Movie cards for Ben-Hur, The Day the Earth Stood Still, and Vertigo, matching the titles visible in the recording's starter-image list.
-- A ticket demo with movie, sample showtime, and quantity selection; validation; and a keyboard-accessible preview dialog. It does not sell or reserve tickets.
-- A contact demo with required fields, email validation, and a live status message. It does not send or store messages.
-- Semantic page sections, form labels, descriptive image alternatives, a skip link, visible keyboard focus, reduced-motion support, `data-movie` attributes, and a small favicon embedded as a data URL.
+- Burgundy-and-gold theme, navigation, and responsive layout.
+- Movie cards for Ben-Hur, The Day the Earth Stood Still, and Vertigo.
+- Ticket selection with example showtimes, quantity validation, and a preview dialog. No tickets are sold or reserved.
+- Contact form validation and a live status message. No messages are sent or stored.
+- Semantic sections, form labels, image descriptions, a skip link, keyboard focus styles, reduced-motion support, data attributes, and a favicon data URL.
+- Bootstrap footer with contact information, social links, and copyright.
+
+The footer uses `.container`, `.row.g-4`, and three `.col-12.col-md-4` sections. They stack below 768 pixels and form three columns from 768 pixels upward. Contact details are fictional, as the assignment permits; social links lead to the platforms' home pages.
 
 ## Files
 
-- `index.html` — page structure and forms.
-- `css/style.css` — styling and responsive rules.
-- `js/script.js` — movie selection, ticket preview, and contact validation.
-- `images/*.svg` — original temporary movie title artwork.
-- `movies.txt` — draft descriptions and example showtimes.
+- `index.html`: page, forms, and footer.
+- `css/style.css`: custom cinema styles.
+- `css/bootstrap-grid.min.css`: official Bootstrap 5.2.3 grid.
+- `css/bootstrap-LICENSE.txt`: Bootstrap's MIT license.
+- `js/script.js`: movie selection, ticket preview, and contact validation.
+- `images/*.svg`: original temporary movie artwork.
+- `movies.txt`: draft descriptions and sample showtimes.
 
-## Needed before final academy submission
+## Remaining course materials
 
-1. The full Assignment or Challenge instructions and grading checklist. Only lesson pages and a short tutorial excerpt were supplied.
-2. The downloadable starter files shown in the recording: `ben-hur.jpg`, `earth-stood-still.jpg`, `vertigo.jpg`, `logo.png`, `theater-curtains.jpg`, and the original `movies.txt`. Replace the original temporary SVG artwork and draft text if those files are required.
-3. Confirmation of any required filenames, exact design, Bootstrap version, or additional tutorial steps. This draft uses plain HTML, CSS, and JavaScript because a framework requirement was not supplied.
-4. The academy assignment submission-page URL. No academy submission has been made.
+Provide the remaining tutorial instructions or a code checklist and the course downloads: `ben-hur.jpg`, `earth-stood-still.jpg`, `vertigo.jpg`, `logo.png`, `theater-curtains.jpg`, and the original `movies.txt`. Replace temporary assets and draft content if required by the full tutorial. The movie, ticket, and contact sections currently use custom HTML, CSS, and JavaScript; the footer now uses Bootstrap's grid.
 
-Review the source and practice explaining the HTML sections, CSS grid and breakpoints, `data-*` attributes, form validation, and JavaScript event listeners before submitting.
+## Validation
 
-## Suggested checks
+Source checks verify local stylesheet links, the Bootstrap footer grid, its three sections, unique IDs, linked headings, section links, contact links, and copyright text. Earlier JavaScript syntax and simulated logic checks passed for the ticket and contact demos.
 
-Open the page at desktop and mobile widths. Choose each movie, try incomplete ticket entries and quantities outside 1–10, and check the preview with valid entries. Close the preview with its button or Escape. Test the contact form with an invalid email, missing fields, spaces-only content, and valid entries. Navigate using Tab to verify the links, form labels, and focus indicators.
+Actual browser rendering, native form behavior, dialog focus, and mobile layout remain unverified because the browser executable was unavailable and its download failed.
 
-## Validation completed
+## References and submission
 
-Local checks passed for JavaScript syntax; local file and section links; unique element IDs; field labels and validation attributes; ARIA references; SVG XML; and the favicon data URL. JavaScript logic checks in a simulated DOM passed for all three movie selections, invalid-form guards, singular/plural ticket summaries, spaces-only contact entries, text-only output, and status reset.
+[Bootstrap 5.2 grid documentation](https://getbootstrap.com/docs/5.2/layout/grid/)
 
-Actual browser rendering, native form behavior, dialog focus, and mobile layout still need manual review. The browser executable was unavailable in the build environment, and its download failed, so no browser-test pass is claimed.
+The supplied submission page asks for the repository URL:
+
+https://github.com/AJKerami/HTML-AND-CSS-PROJECTS
+
+Uploading code to GitHub does not submit the assignment to the academy.

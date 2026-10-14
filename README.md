@@ -2,6 +2,9 @@
 
 ## Assignments
 
+### Academy Cinemas
+Open [Academy Cinemas](Academy-Cinemas/index.html). It includes movie listings, ticket and contact demos, and a Bootstrap grid footer. The footer requirement is implemented; matching all 12 tutorial parts remains to be checked against the complete course materials.
+
 ### Bootstrap Footer Challenge
 Open [the footer example](Bootstrap-Footer-Challenge/index.html). It uses Bootstrap 5.2.3's grid for contact information, social links, and copyright, with three columns on desktop and stacked sections on mobile.
 

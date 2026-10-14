@@ -7,6 +7,7 @@
   <title>Academy Cinemas</title>
   <!-- A small SVG embedded in a data URL needs no separate favicon file. -->
   <link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2064%2064'%3E%3Crect%20width='64'%20height='64'%20rx='12'%20fill='%237a1022'/%3E%3Ctext%20x='32'%20y='45'%20text-anchor='middle'%20font-size='44'%20fill='%23ffe066'%3EA%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="css/bootstrap-grid.min.css">
   <link rel="stylesheet" href="css/style.css">
   <script src="js/script.js" defer></script>
 </head>
@@ -82,7 +83,35 @@
     </section>
   </main>
 
-  <footer class="site-footer"><div class="page-width footer-content"><p class="footer-brand">Academy Cinemas</p><p>Student project &middot; Ahmad Jawed Kerami</p><a href="#home">Back to top <span aria-hidden="true">&uarr;</span></a></div></footer>
+  <footer class="site-footer" id="site-footer">
+    <div class="container footer-grid">
+      <!-- Bootstrap stacks the sections on mobile and creates three columns from md. -->
+      <div class="row g-4">
+        <section class="col-12 col-md-4" aria-labelledby="footer-contact-title">
+          <h2 class="footer-heading" id="footer-contact-title">Contact us</h2>
+          <address>
+            <p><a href="mailto:hello@academycinemas.example">hello@academycinemas.example</a></p>
+            <p><a href="tel:+14165550100">(416) 555-0100</a></p>
+            <p>123 Cinema Lane<br>Brampton, Ontario</p>
+          </address>
+        </section>
+        <nav class="col-12 col-md-4" aria-labelledby="footer-social-title">
+          <h2 class="footer-heading" id="footer-social-title">Follow along</h2>
+          <ul class="footer-social-links">
+            <li><a href="https://www.facebook.com/">Facebook <span aria-hidden="true">&nearr;</span></a></li>
+            <li><a href="https://www.instagram.com/">Instagram <span aria-hidden="true">&nearr;</span></a></li>
+            <li><a href="https://www.youtube.com/">YouTube <span aria-hidden="true">&nearr;</span></a></li>
+          </ul>
+        </nav>
+        <section class="col-12 col-md-4" aria-labelledby="footer-copyright-title">
+          <h2 class="footer-heading" id="footer-copyright-title">Academy Cinemas</h2>
+          <p><small>&copy; 2026 Academy Cinemas.<br>All rights reserved.</small></p>
+          <p class="footer-credit">Student project &middot; Ahmad Jawed Kerami</p>
+          <a href="#home">Back to top <span aria-hidden="true">&uarr;</span></a>
+        </section>
+      </div>
+    </div>
+  </footer>
 
   <dialog id="ticket-dialog" aria-labelledby="dialog-title" aria-describedby="ticket-summary">
     <p class="eyebrow">YOUR SELECTION</p><h2 id="dialog-title">Ticket preview</h2><p id="ticket-summary"></p><p class="small-copy">This is a demonstration. No reservation or purchase has been made.</p><form method="dialog"><button class="button button-dark" type="submit" autofocus>Close preview</button></form>

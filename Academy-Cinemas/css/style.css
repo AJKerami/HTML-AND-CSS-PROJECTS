@@ -74,10 +74,20 @@ textarea { resize: vertical; }
 .contact-copy .small-copy { margin-top: 26px; }
 .form-status { margin-top: 18px; font-size: 14px; color: var(--burgundy); }
 .form-status:empty { display: none; }
-.site-footer { border-top: 1px solid var(--line); }
-.footer-content { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 20px; padding-block: 30px; font-size: 12px; color: var(--muted); }
-.footer-content p { margin: 0; }
-.footer-content .footer-brand { color: var(--burgundy); font: bold 20px Georgia, serif; }
+/* Bootstrap supplies the container, row, gutters, and column widths. */
+.site-footer { color: var(--paper); background: var(--burgundy-dark); border-top: 4px solid var(--gold); }
+.footer-grid { padding-block: 42px; }
+.footer-heading { color: var(--gold); font: bold 24px/1.2 Georgia, serif; margin-bottom: 18px; }
+.site-footer address { font-style: normal; }
+.site-footer p { margin-bottom: 10px; font-size: 14px; }
+.site-footer small { font-size: inherit; }
+.site-footer a { text-decoration: none; text-underline-offset: 4px; overflow-wrap: anywhere; }
+.site-footer a:hover { color: var(--gold); text-decoration: underline; }
+.site-footer a:focus-visible { outline-color: var(--gold); }
+.footer-social-links { margin: 0; padding: 0; list-style: none; }
+.footer-social-links li { margin-bottom: 10px; font-size: 14px; }
+.footer-social-links a { display: inline-flex; justify-content: space-between; gap: 20px; min-width: 140px; }
+.site-footer .footer-credit { color: #e9d3d6; font-size: 12px; margin-bottom: 18px; }
 dialog { width: min(480px, calc(100% - 32px)); max-height: calc(100vh - 40px); padding: 34px; border: 0; border-radius: 8px; color: var(--ink); background: var(--paper); }
 dialog h2 { font-size: 32px; }
 dialog::backdrop { background: #13050cd9; }
@@ -104,7 +114,6 @@ dialog::backdrop { background: #13050cd9; }
   .movie-card img { max-height: 380px; object-fit: contain; background: var(--burgundy-dark); }
   .ticket-grid { gap: 20px; }
   .contact-section { gap: 20px; }
-  .footer-content { align-items: start; flex-direction: column; gap: 14px; }
 }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
