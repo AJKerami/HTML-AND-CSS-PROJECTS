@@ -2,6 +2,9 @@
 
 ## Assignments
 
+### Bootstrap Footer Challenge
+Open [the footer example](Bootstrap-Footer-Challenge/index.html). It uses Bootstrap 5.2.3's grid for contact information, social links, and copyright, with three columns on desktop and stacked sections on mobile.
+
 ### Pet Shop website
 Open [the Pet Shop home page](The-Pet-Shop-Website/index.html). The project includes the home, pets, and about/contact pages, all connected to the shared stylesheet.
 
@@ -20,3 +23,4 @@ The page includes a home section, pictures, a practice contact form, an embedded
 - [Our Pets](The-Pet-Shop-Website/pets.html)
 - [About and Contact](The-Pet-Shop-Website/about.html)
 - [Shared stylesheet](The-Pet-Shop-Website/style.css)
+
