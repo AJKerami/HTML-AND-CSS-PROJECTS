@@ -2,6 +2,9 @@
 
 ## Assignments
 
+### Bootstrap Grid Challenge
+Open [the two-column starter page](Bootstrap-Grid-Challenge/index.html). It uses a Bootstrap container, one row, and two equal col-6 columns. Browser execution is pending on the student's computer.
+
 ### Bootstrap Albums Challenge
 Open [the renovation album](Bootstrap-Albums-Challenge/index.html). It customizes the official Bootstrap 5.3.3 Album template with nine original illustrations and descriptions. Opening it in a browser remains to be verified on the student's computer.
 
