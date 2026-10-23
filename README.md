@@ -20,6 +20,12 @@ Open [the Pet Shop home page](The-Pet-Shop-Website/index.html). The project incl
 ### CSS Effects
 Open the [CSS Effects gallery](Creating-CSS-Effects/index.html). It demonstrates Google Fonts and image hover transformations, with a responsive layout and reduced-motion support.
 
+### Simple Recipes Website
+Open the [Simple Recipes website](Simple-Recipes/index.html). This HTML and CSS page features recipe cards for pasta, salad, and pancakes, along with Home, Recipes, About, and Contact sections. Its navigation links scroll to the matching sections, and the contact form is a practice example that does not send messages.
+
+### Portfolio Website
+Open the [portfolio website files](docs/index.html). This responsive HTML and CSS portfolio introduces my web development work and showcases course projects. It includes About, Projects, Skills, and Contact sections, with links to the related GitHub project files.
+
 ## One-Page Website Assignment
 
 Open [the one-page website](One-Page%20Website/one_page_website.html) in the **One-Page Website** folder.
