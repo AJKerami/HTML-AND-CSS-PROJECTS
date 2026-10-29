@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>The Pet Shop | One-Page Website</title>
   <link rel="stylesheet" href="CSS/one_page_website.css">
+  <script src="JS/lightbox.js" defer></script>
 </head>
 <body>
   <header>
@@ -34,18 +35,24 @@
     <section id="pictures" class="section" aria-labelledby="pictures-heading">
       <div class="wrap">
         <h2 id="pictures-heading">Pictures of our pets</h2>
-        <p>Here are a few examples of the pets you might meet at our shop.</p>
+        <p>Here are a few examples of the pets you might meet at our shop. Click any picture to view it larger.</p>
         <div class="grid">
           <figure class="card">
-            <img src="https://placedog.net/500/350?id=10" alt="A dog photographed outdoors" width="300" height="210">
+            <button class="pet-photo" type="button" data-name="Biscuit" aria-label="View larger photo of Biscuit">
+              <img src="https://placedog.net/500/350?id=10" alt="A dog photographed outdoors" width="300" height="210">
+            </button>
             <figcaption class="card-body"><strong>Biscuit</strong> — a playful young dog.</figcaption>
           </figure>
           <figure class="card">
-            <img src="https://placedog.net/500/350?id=25" alt="A second dog photographed outdoors" width="300" height="210">
+            <button class="pet-photo" type="button" data-name="Pepper" aria-label="View larger photo of Pepper">
+              <img src="https://placedog.net/500/350?id=25" alt="A second dog photographed outdoors" width="300" height="210">
+            </button>
             <figcaption class="card-body"><strong>Pepper</strong> — an energetic companion.</figcaption>
           </figure>
           <figure class="card">
-            <img src="https://placedog.net/500/350?id=33" alt="A third dog photographed outdoors" width="300" height="210">
+            <button class="pet-photo" type="button" data-name="Nugget" aria-label="View larger photo of Nugget">
+              <img src="https://placedog.net/500/350?id=33" alt="A third dog photographed outdoors" width="300" height="210">
+            </button>
             <figcaption class="card-body"><strong>Nugget</strong> — a curious little dog.</figcaption>
           </figure>
         </div>
@@ -101,6 +108,19 @@
       </div>
     </section>
   </main>
+
+  <!-- Clicking a pet photo opens this native modal image gallery. -->
+  <dialog id="pet-lightbox" class="lightbox" aria-labelledby="lightbox-caption">
+    <button id="lightbox-close" class="lightbox-close" type="button" aria-label="Close enlarged photo">&times;</button>
+    <figure>
+      <img id="lightbox-image" alt="">
+      <figcaption id="lightbox-caption"></figcaption>
+    </figure>
+    <div class="lightbox-actions">
+      <button id="lightbox-prev" type="button">Previous photo</button>
+      <button id="lightbox-next" type="button">Next photo</button>
+    </div>
+  </dialog>
 
   <footer>
     <div class="wrap">
