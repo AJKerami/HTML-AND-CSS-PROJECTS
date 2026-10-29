@@ -237,3 +237,73 @@ button:hover { background: #286162; }
 @media (max-width: 700px) {
   nav ul { gap: 16px; }
 }
+
+/* Clickable pet thumbnails */
+.pet-photo {
+  display: block;
+  width: 100%;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  cursor: zoom-in;
+}
+
+.pet-photo:hover { background: transparent; }
+
+/* Full-size image gallery uses the browser's native modal dialog. */
+.lightbox {
+  width: min(90vw, 820px);
+  max-height: calc(100vh - 48px);
+  padding: 24px;
+  border: 0;
+  border-radius: 12px;
+  background: #fff;
+  color: var(--ink);
+  box-shadow: 0 18px 70px rgba(0, 0, 0, 0.35);
+  text-align: center;
+}
+
+.lightbox::backdrop {
+  background: rgba(0, 0, 0, 0.82);
+}
+
+.lightbox figure { margin: 24px 0 12px; }
+
+.lightbox img {
+  display: block;
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  max-height: 65vh;
+  margin: 0 auto;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+.lightbox figcaption {
+  margin-top: 12px;
+  font-weight: 600;
+  color: var(--teal);
+}
+
+.lightbox-close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  padding: 4px 12px;
+  background: var(--teal);
+  font-size: 1.4rem;
+}
+
+.lightbox-actions {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 480px) {
+  .lightbox { padding: 16px; }
+  .lightbox-actions button { padding: 10px 12px; }
+}
