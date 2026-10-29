@@ -15,7 +15,13 @@ function displayPhoto(index) {
   const button = photoButtons[currentPhoto];
   const thumbnail = button.querySelector("img");
 
-  lightboxImage.src = thumbnail.src;
+  // Use a higher-resolution image in the modal. If it fails to load,
+  // keep the gallery usable by falling back to the thumbnail.
+  lightboxImage.onerror = () => {
+    lightboxImage.onerror = null;
+    lightboxImage.src = thumbnail.src;
+  };
+  lightboxImage.src = button.dataset.full || thumbnail.src;
   lightboxImage.alt = thumbnail.alt;
   lightboxCaption.textContent = button.dataset.name;
 }
